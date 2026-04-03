@@ -1,6 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-ppb-green: #006B3F;
+  --color-ppb-green-dark: #004d2d;
+  --color-ppb-green-light: #e6f4ee;
+  --color-ppb-gold: #D4AF37;
+  --color-ppb-red: #CE1126;
+  --color-ppb-navy: #1a2b52;
+}
 
 * {
   box-sizing: border-box;
@@ -16,13 +23,4 @@ body {
   width: 100%;
   min-height: 100vh;
   text-align: left;
-}
-
-@layer utilities {
-  .scrollbar-thin {
-    scrollbar-width: thin;
-  }
-  .scrollbar-thumb-green {
-    scrollbar-color: #006B3F #e6f4ee;
-  }
 }
