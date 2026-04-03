@@ -10,7 +10,7 @@ import Reports from './pages/Reports';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ppp_pharma_tracking">
       <Routes>
         <Route path="/"              element={<Dashboard />} />
         <Route path="/products"      element={<ProductRegistry />} />
